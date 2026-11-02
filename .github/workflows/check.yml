@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: chmod +x scripts/check-unity-meta-guids.sh
-      - run: ./scripts/check-unity-meta-guids.sh
+      - run: chmod +x scripts/check-unity.sh scripts/check-unity-meta-guids.sh scripts/check-unity-forbidden-paths.sh scripts/check-unity-input-system.sh
+      - run: ./scripts/check-unity.sh

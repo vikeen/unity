@@ -6,7 +6,16 @@ Read during **review**, not while exploring or implementing. The implementation 
 
 - **Never hand-author a `guid:` in a `.meta` file.** Unity requires exactly **32 lowercase hexadecimal characters**. An invalid guid makes Unity **ignore the asset** (often with only a Console error). Fix: delete the bad `.meta`, let the Editor recreate it, or create the asset through the Editor / `unity command script.create` / `asset.create_folder`.
 - **Do not commit a partial `.meta`** (for example a file that contains only `fileFormatVersion` and `guid` without the importer block Unity expects). Treat truncated metas as a blocker.
-- Before approving PRs that add scripts under `Assets/`, run `./scripts/check-unity-meta-guids.sh` (also enforced in CI).
+- Before approving PRs that add scripts under `Assets/`, run `./scripts/check-unity.sh` (also enforced in CI).
+
+## Input System and UGUI (review)
+
+- When **`ProjectSettings/ProjectSettings.asset`** has **`activeInputHandler: 1`** (Input System Package only), every scene **EventSystem** must use **`InputSystemUIInputModule`**, not **`StandaloneInputModule`**. Legacy module throws `InvalidOperationException` on `UnityEngine.Input` every frame in Play mode.
+- Fix in Editor: remove `StandaloneInputModule`, add `InputSystemUIInputModule` (Pipeline: `component.remove` / `component.add` on `/EventSystem`, then **`scene save`**).
+
+## Git and scratch folders (review)
+
+- Do **not** commit **`Assets/Temp.meta`** or track **`Assets/Temp/`** as project content. The folder is gitignored as `Temp/`; without ignoring the meta, Git shows an orphan untracked `.meta`. Delete both locally or rely on `.gitignore`.
 
 ## C# under Assets
 

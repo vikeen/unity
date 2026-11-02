@@ -1,6 +1,8 @@
 # Unity generated
 [Ll]ibrary/
 [Tt]emp/
+# Assets/Temp/ is ignored by [Tt]emp/ above; ignore its folder .meta too (do not commit).
+**/[Aa]ssets/[Tt]emp.meta
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/

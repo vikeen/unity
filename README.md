@@ -10,7 +10,7 @@ Personal Unity experiments and projects. Each game lives in its own subfolder at
 
 Agents: see [AGENTS.md](AGENTS.md). Unity CLI + Editor workflows: [docs/unity-agent-pipeline.md](docs/unity-agent-pipeline.md).
 
-Checks: `./scripts/check-unity-meta-guids.sh` (also runs in CI).
+Checks: `./scripts/check-unity.sh` (also runs in CI).
 
 ## Getting started
 

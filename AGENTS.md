@@ -40,7 +40,7 @@ Use **`unity`** for installs, builds, and automation; use **`unity command …`*
 
 `unity run` is batch-mode, not Game view Play. `unity build` is a player build, not Play mode.
 
-**Pipeline** (new scripts, scenes, hierarchy, attach components): read **[docs/unity-agent-pipeline.md](docs/unity-agent-pipeline.md)** — do not hand-author `.meta` guids; run `./scripts/check-unity-meta-guids.sh` before committing asset changes.
+**Pipeline** (new scripts, scenes, hierarchy, attach components): read **[docs/unity-agent-pipeline.md](docs/unity-agent-pipeline.md)** — do not hand-author `.meta` guids; run `./scripts/check-unity.sh` before committing asset changes.
 
 **Review** of Unity assets and scenes: [CODING_STANDARDS.md](CODING_STANDARDS.md).
 

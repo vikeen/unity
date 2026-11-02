@@ -21,6 +21,7 @@ Agent sandboxes often omit `~/.unity/bin` from `PATH` and **block loopback** to 
 | `editor_play` | `unity command editor.playmode start` |
 | `transform.set_transform` | `unity command gameobject.set_transform` |
 | `scene.save_all` | `unity command scene.save` |
+| Pipeline while in Play | `unity command editor.playmode stop` before `scene.open` / hierarchy edits |
 | `component.add` with a new script type | `unity command script.attach --script Assets/…/Foo.cs` after compile |
 
 Discover names: `unity command --query <term>` or `unity command --json --query set_transform`.
@@ -52,6 +53,16 @@ Ordered recipe:
 
 Attach behaviours with **`script.attach`**, then wire references with **`component.set_field`** when needed.
 
+### EventSystem and Input System
+
+Projects on **Input System only** (`activeInputHandler: 1` in `ProjectSettings/ProjectSettings.asset`) must not use **`StandaloneInputModule`** on the scene **EventSystem** — use **`InputSystemUIInputModule`** instead. Symptom in Play mode: `InvalidOperationException: You are trying to read Input using the UnityEngine.Input class…`
+
+```bash
+unity command component.remove --target '{"hierarchyPath":"/EventSystem"}' --type StandaloneInputModule
+unity command component.add --target '{"hierarchyPath":"/EventSystem"}' --type InputSystemUIInputModule
+unity command scene.save
+```
+
 ## Play mode
 
 ```bash
@@ -66,7 +77,7 @@ Increase `--timeout` while the Editor is compiling. Stop with `editor.playmode s
 From repo root:
 
 ```bash
-./scripts/check-unity-meta-guids.sh
+./scripts/check-unity.sh
 ```
 
 See [CODING_STANDARDS.md](../CODING_STANDARDS.md) for review rules.
