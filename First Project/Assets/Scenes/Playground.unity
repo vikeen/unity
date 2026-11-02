@@ -7667,6 +7667,7 @@ GameObject:
   - component: {fileID: 1730755847}
   - component: {fileID: 1730755846}
   - component: {fileID: 1730755851}
+  - component: {fileID: 1730755852}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -7688,6 +7689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WoodUI
   inventory: {fileID: 397424598}
   woodLabel: {fileID: 1497731926}
+  woodIcon: {fileID: 0}
+  woodIconSprite: {fileID: 21300000, guid: 312250d3900554642aa06fed7cf200d6, type: 3}
+  iconSize: 32
 --- !u!114 &1730755847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7789,6 +7793,20 @@ MonoBehaviour:
   playerController: {fileID: 397424597}
   panelRoot: {fileID: 2027537516}
   contentsLabel: {fileID: 982045005}
+--- !u!114 &1730755852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730755845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e193c18fe043d414e879b768eb787b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrosshairUI
+  dotSize: 6
+  dotColor: {r: 1, g: 1, b: 1, a: 0.9}
 --- !u!1 &1835539410
 GameObject:
   m_ObjectHideFlags: 0
