@@ -870,15 +870,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -927,8 +927,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 156592785}
   m_SourcePrefab: {fileID: 100100000, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+--- !u!1 &156592784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+  m_PrefabInstance: {fileID: 156592783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &156592785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156592784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0578d6e506d2b4e2da2e003339162c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wolf
+  capsuleCenter: {x: 0, y: 0.55, z: 0}
+  capsuleRadius: 0.45
+  capsuleHeight: 1.1
 --- !u!1001 &192150430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -939,15 +962,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -996,8 +1019,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 192150432}
   m_SourcePrefab: {fileID: 100100000, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+--- !u!1 &192150431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+  m_PrefabInstance: {fileID: 192150430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192150432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192150431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0578d6e506d2b4e2da2e003339162c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wolf
+  capsuleCenter: {x: 0, y: 0.55, z: 0}
+  capsuleRadius: 0.45
+  capsuleHeight: 1.1
 --- !u!1 &195018587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,6 +1668,9 @@ GameObject:
   - component: {fileID: 397424596}
   - component: {fileID: 397424597}
   - component: {fileID: 397424598}
+  - component: {fileID: 397424599}
+  - component: {fileID: 397424600}
+  - component: {fileID: 397424601}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1705,6 +1754,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
   wood: 0
+--- !u!114 &397424599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397424594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51583225f0d9e441888769d732558403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FirstPersonWeaponEquip
+  viewCamera: {fileID: 25257540}
+  weaponViewPrefab: {fileID: 6216974350756572056, guid: f4caa27432533496585e5f7e323b8fc2, type: 3}
+  localPosition: {x: 0.28, y: -0.22, z: 0.52}
+  localEulerAngles: {x: -8, y: 0, z: 2}
+  uniformScale: 1
+  viewCameraNearClip: 0.01
+--- !u!114 &397424600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397424594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df0c47845ebf477aa04be9108fb138e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuntingRifleFire
+  viewCamera: {fileID: 25257541}
+  weaponEquip: {fileID: 397424599}
+  magazine: {fileID: 397424601}
+  range: 120
+  harvestCrosshairReach: 6
+  shootClip: {fileID: 8300000, guid: df2922bd1cf554d1b9d2db78e5e4ab33, type: 3}
+  shootVolume: 0.9
+--- !u!114 &397424601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397424594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c74884eff897244adb40bcc7ae81b60c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuntingRifleMagazine
+  loadedRounds: 4
 --- !u!1 &407161378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,15 +3513,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3471,8 +3570,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730941079}
   m_SourcePrefab: {fileID: 100100000, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+--- !u!1 &730941078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+  m_PrefabInstance: {fileID: 730941077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &730941079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730941078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0578d6e506d2b4e2da2e003339162c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wolf
+  capsuleCenter: {x: 0, y: 0.55, z: 0}
+  capsuleRadius: 0.45
+  capsuleHeight: 1.1
 --- !u!1 &762521744
 GameObject:
   m_ObjectHideFlags: 0
@@ -4588,15 +4710,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4645,8 +4767,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006339080}
   m_SourcePrefab: {fileID: 100100000, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+--- !u!1 &1006339079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+  m_PrefabInstance: {fileID: 1006339078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006339080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006339079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0578d6e506d2b4e2da2e003339162c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wolf
+  capsuleCenter: {x: 0, y: 0.55, z: 0}
+  capsuleRadius: 0.45
+  capsuleHeight: 1.1
 --- !u!1 &1020238916
 GameObject:
   m_ObjectHideFlags: 0
@@ -6426,15 +6571,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13552983
+      value: 0.20329474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6483,8 +6628,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1345909796}
   m_SourcePrefab: {fileID: 100100000, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+--- !u!1 &1345909795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afbae2ddcef814ed098faaa3dcee8bae, type: 3}
+  m_PrefabInstance: {fileID: 1345909794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1345909796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345909795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0578d6e506d2b4e2da2e003339162c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wolf
+  capsuleCenter: {x: 0, y: 0.55, z: 0}
+  capsuleRadius: 0.45
+  capsuleHeight: 1.1
 --- !u!1 &1362242592
 GameObject:
   m_ObjectHideFlags: 0
@@ -8075,6 +8243,7 @@ GameObject:
   - component: {fileID: 1730755852}
   - component: {fileID: 1730755853}
   - component: {fileID: 1730755854}
+  - component: {fileID: 1730755855}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -8245,6 +8414,26 @@ MonoBehaviour:
   ringSize: 44
   trackColor: {r: 1, g: 1, b: 1, a: 0.22}
   fillColor: {r: 0.35, g: 0.95, b: 0.45, a: 0.95}
+--- !u!114 &1730755855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730755845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f63f238d053420ba9f7e019e03b810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RifleAmmoHUD
+  weaponEquip: {fileID: 397424599}
+  magazine: {fileID: 397424601}
+  bulletWidth: 8
+  bulletHeight: 18
+  spacing: 4
+  margin: {x: 24, y: 24}
+  loadedBulletColor: {r: 0.92, g: 0.82, b: 0.38, a: 1}
+  emptyBulletColor: {r: 0.08, g: 0.08, b: 0.08, a: 1}
 --- !u!1 &1835539410
 GameObject:
   m_ObjectHideFlags: 0
