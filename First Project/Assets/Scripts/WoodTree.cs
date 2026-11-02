@@ -1,11 +1,21 @@
 using UnityEngine;
 
-/// <summary>Marker on tree roots for click-to-harvest raycasts.</summary>
+/// <summary>Marker on tree roots for hold-to-harvest raycasts.</summary>
 public class WoodTree : MonoBehaviour, IInteractable
 {
     [SerializeField] string promptLabel = "Tree";
+    [SerializeField] float harvestHoldSeconds = 3f;
 
     public string PromptLabel => promptLabel;
+    public float HarvestHoldSeconds => harvestHoldSeconds;
+
+    public void CompleteHarvest(PlayerInventory inventory)
+    {
+        if (inventory != null)
+            inventory.AddWood(1);
+
+        Destroy(gameObject);
+    }
 
     void Awake()
     {

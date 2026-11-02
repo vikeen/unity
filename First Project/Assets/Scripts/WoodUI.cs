@@ -88,7 +88,8 @@ public class WoodUI : MonoBehaviour
             layout.childForceExpandWidth = false;
             layout.childForceExpandHeight = false;
 
-            woodLabel.transform.SetParent(row.transform, false);
+            row = rowGo.transform;
+            woodLabel.transform.SetParent(row, false);
             var labelRect = woodLabel.GetComponent<RectTransform>();
             labelRect.sizeDelta = new Vector2(72f, iconSize);
 

@@ -22,6 +22,9 @@ public class FirstPersonController : MonoBehaviour
         CharacterController _controller;
         Camera _camera;
         InventoryPanelUI _inventoryPanel;
+        HoldInteractProgressUI _holdProgressUi;
+        WoodTree _holdTree;
+        float _holdElapsed;
         float _verticalVelocity;
         float _pitch;
 
@@ -46,6 +49,7 @@ public class FirstPersonController : MonoBehaviour
             }
 
             _inventoryPanel = FindFirstObjectByType<InventoryPanelUI>();
+            _holdProgressUi = FindFirstObjectByType<HoldInteractProgressUI>();
         }
 
         void OnEnable()
@@ -74,31 +78,69 @@ public class FirstPersonController : MonoBehaviour
                 Cursor.visible = true;
             }
 
-            if (Mouse.current.leftButton.wasPressedThisFrame)
+            if (Mouse.current.leftButton.wasPressedThisFrame
+                && Cursor.lockState != CursorLockMode.Locked)
             {
-                if (Cursor.lockState != CursorLockMode.Locked)
-                {
-                    Cursor.lockState = CursorLockMode.Locked;
-                    Cursor.visible = false;
-                }
-
-                TryHarvestTree();
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
+
+            HandleTreeHoldHarvest();
 
             HandleLook();
             HandleMove();
         }
 
-        void TryHarvestTree()
+        void HandleTreeHoldHarvest()
         {
             ResolveCamera();
             if (_camera == null || inventory == null)
+            {
+                ResetTreeHold();
+                return;
+            }
+
+            if (Cursor.lockState != CursorLockMode.Locked || Cursor.visible)
+            {
+                ResetTreeHold();
+                return;
+            }
+
+            bool holding = Mouse.current.leftButton.isPressed;
+            bool hasTree = InteractionQueries.TryGetWoodTree(_camera, harvestReach, out WoodTree tree);
+
+            if (!holding || !hasTree)
+            {
+                ResetTreeHold();
+                return;
+            }
+
+            if (_holdTree != tree)
+            {
+                _holdTree = tree;
+                _holdElapsed = 0f;
+            }
+
+            float duration = Mathf.Max(0.01f, tree.HarvestHoldSeconds);
+            _holdElapsed += Time.deltaTime;
+            float normalized = Mathf.Clamp01(_holdElapsed / duration);
+
+            if (_holdProgressUi != null)
+                _holdProgressUi.SetProgress(normalized, true);
+
+            if (normalized < 1f)
                 return;
 
-            if (!InteractionQueries.TryGetWoodTree(_camera, harvestReach, out WoodTree tree))
-                return;
+            tree.CompleteHarvest(inventory);
+            ResetTreeHold();
+        }
 
-            inventory.AddWood(1);
+        void ResetTreeHold()
+        {
+            _holdTree = null;
+            _holdElapsed = 0f;
+            if (_holdProgressUi != null)
+                _holdProgressUi.SetProgress(0f, false);
         }
 
         void ResolveCamera()

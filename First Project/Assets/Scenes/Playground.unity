@@ -589,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &81015549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &323239465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &440595530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,6 +2149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &510990952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,6 +2221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &519446860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &530203953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,6 +2455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &574559164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &610646547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,6 +2779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &637195406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &670019010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +2923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &675457667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,6 +3085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &717264374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,6 +3337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &772818569
 GameObject:
   m_ObjectHideFlags: 0
@@ -4206,6 +4219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &982045004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4356,6 +4370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1020238916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +4735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1062294720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4791,6 +4807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1088683318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4862,6 +4879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1089968159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5023,6 +5041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1160598967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5184,6 +5203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1179690068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,6 +5275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1180432441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,6 +5797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1312986969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,6 +6139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1362242592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6188,6 +6211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1363645794
 GameObject:
   m_ObjectHideFlags: 0
@@ -6259,6 +6283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1399442655
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,6 +6704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1573430725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6840,6 +6866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1592640051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7181,6 +7208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1621364184
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,6 +7550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1690323715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,6 +7622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1693068767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,6 +7729,7 @@ GameObject:
   - component: {fileID: 1730755851}
   - component: {fileID: 1730755852}
   - component: {fileID: 1730755853}
+  - component: {fileID: 1730755854}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -7854,6 +7885,21 @@ MonoBehaviour:
   reach: 6
   offsetBelowCrosshair: 36
   fontSize: 22
+--- !u!114 &1730755854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730755845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285ae85668fa34828a2d1e75f9bae903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoldInteractProgressUI
+  ringSize: 44
+  trackColor: {r: 1, g: 1, b: 1, a: 0.22}
+  fillColor: {r: 0.35, g: 0.95, b: 0.45, a: 0.95}
 --- !u!1 &1835539410
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,6 +8151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1907990823
 GameObject:
   m_ObjectHideFlags: 0
@@ -8626,6 +8673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
   promptLabel: Tree
+  harvestHoldSeconds: 3
 --- !u!1 &1990776953
 GameObject:
   m_ObjectHideFlags: 0
@@ -8893,7 +8941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2030481862}
   - component: {fileID: 2030481861}
-  - component: {fileID: 2030481860}
+  - component: {fileID: 2030481863}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -8901,26 +8949,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2030481860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2030481859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.StandaloneInputModule
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &2030481861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8951,6 +8979,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2030481863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030481859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!1 &2060233473
 GameObject:
   m_ObjectHideFlags: 0
