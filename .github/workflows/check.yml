@@ -1,0 +1,13 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unity-meta-guids:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: chmod +x scripts/check-unity-meta-guids.sh
+      - run: ./scripts/check-unity-meta-guids.sh
