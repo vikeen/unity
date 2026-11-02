@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 25257542}
   m_Layer: 0
   m_Name: PlayerCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &81015549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &323239465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1551,7 @@ MonoBehaviour:
   lookSensitivity: 0.15
   maxPitch: 85
   inventory: {fileID: 397424598}
-  harvestReach: 5
+  harvestReach: 6
 --- !u!114 &397424598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,6 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &440595530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,6 +2145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &510990952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2212,6 +2216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &519446860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,6 +2287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &530203953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &574559164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &610646547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,6 +2770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &637195406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2832,6 +2841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &670019010
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,6 +2912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &675457667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,6 +3073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &717264374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,6 +3324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &772818569
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,6 +4205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &982045004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4341,6 +4355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1020238916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +4719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1062294720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,6 +4790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1088683318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,6 +4861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1089968159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,6 +5022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1160598967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5164,6 +5183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1179690068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5234,6 +5254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1180432441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5754,6 +5775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1312986969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,6 +6116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1362242592
 GameObject:
   m_ObjectHideFlags: 0
@@ -6164,6 +6187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1363645794
 GameObject:
   m_ObjectHideFlags: 0
@@ -6234,6 +6258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1399442655
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,6 +6678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1573430725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6813,6 +6839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1592640051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,6 +7180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1621364184
 GameObject:
   m_ObjectHideFlags: 0
@@ -7493,6 +7521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1690323715
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,6 +7592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1693068767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7668,6 +7698,7 @@ GameObject:
   - component: {fileID: 1730755846}
   - component: {fileID: 1730755851}
   - component: {fileID: 1730755852}
+  - component: {fileID: 1730755853}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -7807,6 +7838,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CrosshairUI
   dotSize: 6
   dotColor: {r: 1, g: 1, b: 1, a: 0.9}
+--- !u!114 &1730755853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730755845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8170ebbeb9d354491bb285ec08ab87e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractPromptUI
+  viewCamera: {fileID: 0}
+  reach: 6
+  offsetBelowCrosshair: 36
+  fontSize: 22
 --- !u!1 &1835539410
 GameObject:
   m_ObjectHideFlags: 0
@@ -8057,6 +8104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1907990823
 GameObject:
   m_ObjectHideFlags: 0
@@ -8577,6 +8625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b26778b4a114395a7bc97ae81096a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WoodTree
+  promptLabel: Tree
 --- !u!1 &1990776953
 GameObject:
   m_ObjectHideFlags: 0

@@ -81,10 +81,8 @@ public class FirstPersonController : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Locked;
                     Cursor.visible = false;
                 }
-                else
-                {
-                    TryHarvestTree();
-                }
+
+                TryHarvestTree();
             }
 
             HandleLook();
@@ -93,17 +91,29 @@ public class FirstPersonController : MonoBehaviour
 
         void TryHarvestTree()
         {
+            ResolveCamera();
             if (_camera == null || inventory == null)
                 return;
 
-            Ray ray = new Ray(_camera.transform.position, _camera.transform.forward);
-            if (!Physics.Raycast(ray, out RaycastHit hit, harvestReach))
-                return;
-
-            if (hit.collider.GetComponentInParent<WoodTree>() == null)
+            if (!InteractionQueries.TryGetWoodTree(_camera, harvestReach, out WoodTree tree))
                 return;
 
             inventory.AddWood(1);
+        }
+
+        void ResolveCamera()
+        {
+            if (_camera != null)
+                return;
+
+            if (cameraTransform != null)
+                _camera = cameraTransform.GetComponent<Camera>();
+
+            if (_camera == null)
+                _camera = GetComponentInChildren<Camera>();
+
+            if (_camera == null)
+                _camera = Camera.main;
         }
 
         void HandleLook()
